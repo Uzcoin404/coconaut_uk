@@ -27,7 +27,6 @@ const StyledMarkdownContent = styled.div`
 
 const TextPage = ({ data }) => {
   const page = data.contentfulPage;
-  console.log(page);
 
   return (
     <Layout title={page.title} description={''}>

@@ -11,7 +11,6 @@ const EmptyCart = () => (
 
 const Cart = () => {
   const { checkout } = React.useContext(StoreContext);
-  console.log(checkout);
   return (
     <Layout title='Shopping cart' description='Manage your shopping cart'>
       <SectionWrapper padded>

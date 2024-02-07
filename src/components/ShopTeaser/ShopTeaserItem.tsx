@@ -38,7 +38,6 @@ const Price = styled.div`
 export const ShopTeaserItem = ({ product }: any) => {
   const variant = product.variants[0];
   const [quantity, setQuantity] = React.useState(1);
-  console.log(product.descriptionHtml);
 
   return (
     <ShopTeaserItemStyle>

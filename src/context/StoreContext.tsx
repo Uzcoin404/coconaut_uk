@@ -28,19 +28,19 @@ const defaultValues: StoreContextInterface = {
   client: client,
   checkout: null,
   addVariantToCart: function (variantId: any, quantity: any): void {
-    console.log(`variantId: ${variantId}, quantitiy: ${quantity}`);
+    // console.log(`variantId: ${variantId}, quantitiy: ${quantity}`);
   },
   removeLineItem: function (checkoutID: any, lineItemID: any): void {
-    console.log(`checkoutID: ${checkoutID}, lineItemId: ${lineItemID}`);
+    // console.log(`checkoutID: ${checkoutID}, lineItemId: ${lineItemID}`);
   },
   updateLineItem: function (
     checkoutID: any,
     lineItemID: any,
     quantity: any
   ): void {
-    console.log(
-      `checkoutID : ${checkoutID}, lineItemID: ${lineItemID}, quantity: ${quantity}`
-    );
+    // console.log(
+    //   `checkoutID : ${checkoutID}, lineItemID: ${lineItemID}, quantity: ${quantity}`
+    // );
   },
 };
 

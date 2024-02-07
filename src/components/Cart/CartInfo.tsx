@@ -68,7 +68,7 @@ export const CartInfo = ({ checkout }: cartInfoProps) => {
       <div>
         <StyledTotal>
           <Typography>Total price</Typography>
-          <Typography>£&nbsp;{checkout.subtotalPrice}</Typography>
+          <Typography>£&nbsp;{checkout.subtotalPrice.amount}</Typography>
         </StyledTotal>
         <Centered onBoth>
           <Button href={checkout.webUrl}>Checkout</Button>

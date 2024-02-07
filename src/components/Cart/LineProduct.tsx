@@ -31,7 +31,7 @@ export const LineProduct = ({ item }: lineItemProps) => {
     <tr>
       <td>
         <Subheadline>{item.title}</Subheadline>
-        <Typography>{item.price}</Typography>
+        <Typography>{item.variant.price.amount}</Typography>
         <Quantity id={item.title} value={quantity} setValue={setQuantity} />
         <a onClick={handleRemove}>
           <Typography>remove</Typography>
@@ -40,7 +40,7 @@ export const LineProduct = ({ item }: lineItemProps) => {
 
       <td>
         <Typography>
-          £&nbsp;{(item.quantity * item.variant.price).toFixed(2)}
+          £&nbsp;{(item.quantity * item.variant.price.amount).toFixed(2)}
         </Typography>
       </td>
     </tr>
